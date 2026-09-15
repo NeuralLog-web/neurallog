@@ -1,6 +1,9 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import AboutHeroImage from '../../assets/blog-placeholder-about.jpg';
+import Layout from '../../layouts/BlogPost.astro';
+export function getStaticPaths() {
+	return [{ params: { lang: 'en' } }, { params: { lang: 'zh' } }];
+}
 ---
 
 <Layout
