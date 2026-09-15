@@ -7,6 +7,9 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://neurallog.io',
+	redirects: {
+		'/': '/en/',
+	},
 	i18n: {
 		locales: ['en', 'zh'],
 		defaultLocale: 'en',
